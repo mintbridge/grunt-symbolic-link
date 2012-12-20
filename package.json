@@ -5,7 +5,7 @@
   "homepage": "https://github.com/mintbridge/grunt-contrib-symlink",
   "author": {
     "name": "Paul Dixon",
-    "url": "http://www.mintbridge.co.uk/"
+    "email": "paul.dixon@mintbridge.co.uk"
   },
   "repository": {
     "type": "git",
@@ -37,12 +37,17 @@
     "grunt-contrib-clean": "~0.3.0"
   },
   "keywords": [
-    "gruntplugin", "symlink"
+    "gruntplugin",
+    "symlink"
   ],
   "contributors": [
-    {
-      "name": "Paul Dixon",
-      "url": "http://www.mintbridge.co.uk/"
-    }
-  ]
+    "Paul Dixon <paul.dixon@mintbridge.co.uk>"
+  ],
+  "readmeFilename": "README.md",
+  "gitHead": "497ad9393733117588b7cc687135227c0ff5ad0e",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "license": "BSD"
 }
