@@ -1,0 +1,48 @@
+{
+  "name": "grunt-contrib-symlink",
+  "description": "Create a symlink between paths",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mintbridge/grunt-contrib-symlink",
+  "author": {
+    "name": "Paul Dixon",
+    "url": "http://www.mintbridge.co.uk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mintbridge/grunt-contrib-symlink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mintbridge/grunt-contrib-symlink/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mintbridge/grunt-contrib-symlink/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt-lib-contrib": "~0.3.0",
+    "mkdirp": "~0.3.1",
+    "rimraf": "~2.0.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.15",
+    "grunt-contrib-clean": "~0.3.0"
+  },
+  "keywords": [
+    "gruntplugin", "symlink"
+  ],
+  "contributors": [
+    {
+      "name": "Paul Dixon",
+      "url": "http://www.mintbridge.co.uk/"
+    }
+  ]
+}
