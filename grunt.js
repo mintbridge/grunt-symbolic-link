@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         }
       },
       singleInNewDirectory:{
-        target: 'test/fixtures/single.js',
+        target: '../test/fixtures/single.js',
         link:'tmp/single.js',
         options: {
           overwrite: true,
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         }
       },
       directoryInNewDirectory:{
-        target: 'test/fixtures/folder_one',
+        target: '../../test/fixtures/folder_one',
         link:'tmp/test/folder_one',
         options: {
           overwrite: true,

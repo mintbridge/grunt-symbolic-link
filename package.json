@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-symlink",
   "description": "Create a symlink between paths",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/mintbridge/grunt-contrib-symlink",
   "author": {
     "name": "Paul Dixon",

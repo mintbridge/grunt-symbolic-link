@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     var options = helpers.options(this, {
       overwrite: false,
       force: false,
-      type: null
+      type: 'file'
     });
 
     var target;
@@ -46,10 +46,9 @@ module.exports = function(grunt) {
     }
 
     // does the src exist?
-    if ( ! fs.existsSync(target)) {
-      grunt.fail.warn('The target file/directory [' + target + '] does not exist.');
+    if (fs.existsSync(target)) {
+      type = fs.statSync(target).isFile() ? 'file' : 'dir';
     }
-    type = options.type || fs.statSync(target).isFile() ? 'file' : 'dir';
 
     // does the destination already exist?
     if (fs.existsSync(link)) {
@@ -73,14 +72,6 @@ module.exports = function(grunt) {
         grunt.verbose.or.write('Creating directory ' + linkDir.cyan + '...');
         mkdirp.sync(linkDir);
         grunt.verbose.or.ok();
-      }
-    }
-
-    if(link[0] !== '/') {
-      //prepend with dots to make it relative
-      depth = link.match(/\//g);
-      if (depth && depth.length > 0) {
-        target = new Array(depth.length+1).join("../") + target;
       }
     }
 
