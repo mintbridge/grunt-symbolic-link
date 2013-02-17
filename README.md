@@ -1,4 +1,4 @@
-# grunt-contrib-symlink [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-symlink.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-symlink)
+# grunt-symbolic-link [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-symbolic-link.png?branch=master)](http://travis-ci.org/gruntjs/grunt-symbolic-link)
 
 Create symlinks between files/directories
 
@@ -8,12 +8,12 @@ This task can be used to create symlinks between files/directories in your proje
 be used to create multiple links.
 
 ### Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-symlink`
+Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-symbolic-link`
 
 Then add this line to your project's `grunt.js` gruntfile:
 
 ```javascript
-grunt.loadNpmTasks('grunt-contrib-symlink');
+grunt.loadNpmTasks('grunt-symbolic-link');
 ```
 
 ### Usage

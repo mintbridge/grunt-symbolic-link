@@ -1,5 +1,5 @@
 /*
- * grunt-contrib-symlink
+ * grunt-symbolic-link
  * http://gruntjs.com/
  *
  * Copyright (c) 2012 Paul Dixon, contributors

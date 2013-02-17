@@ -1,3 +1,7 @@
+v0.2.0:
+  date: 2013-02-17
+  changes:
+    - rename to avoid reserved "contrib" naming scheme
 v0.1.0:
   date: 2012-12-20
   changes:

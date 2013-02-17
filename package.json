@@ -1,23 +1,23 @@
 {
-  "name": "grunt-contrib-symlink",
+  "name": "grunt-symbolic-link",
   "description": "Create a symlink between paths",
   "version": "0.1.1",
-  "homepage": "https://github.com/mintbridge/grunt-contrib-symlink",
+  "homepage": "https://github.com/mintbridge/grunt-symbolic-link",
   "author": {
     "name": "Paul Dixon",
     "email": "paul.dixon@mintbridge.co.uk"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mintbridge/grunt-contrib-symlink.git"
+    "url": "git://github.com/mintbridge/grunt-symbolic-link.git"
   },
   "bugs": {
-    "url": "https://github.com/mintbridge/grunt-contrib-symlink/issues"
+    "url": "https://github.com/mintbridge/grunt-symbolic-link/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/mintbridge/grunt-contrib-symlink/blob/master/LICENSE-MIT"
+      "url": "https://github.com/mintbridge/grunt-symbolic-link/blob/master/LICENSE-MIT"
     }
   ],
   "main": "grunt.js",
