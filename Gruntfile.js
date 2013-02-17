@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     lint: {
-      all: ['grunt.js', 'tasks/*.js', '<config:nodeunit.tasks>']
+      all: ['grunt.js', 'tasks/*.js', '<%= nodeunit.tasks %>']
     },
 
     jshint: {
@@ -100,12 +100,12 @@ module.exports = function(grunt) {
 
   // The clean plugin helps in testing.
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.renameTask('test', 'nodeunit');
-  grunt.registerTask('test', 'clean symlink nodeunit clean');
+  grunt.registerTask('test', ['clean', 'symlink', 'nodeunit', 'clean']);
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', 'lint test');
+  grunt.registerTask('default', ['lint', 'nodeunit']);
 };

@@ -9,17 +9,13 @@
 module.exports = function(grunt) {
   'use strict';
 
-  // TODO: ditch this when grunt v0.4 is released
-  grunt.util = grunt.util || grunt.utils;
-
   var fs = require('fs');
   var path = require('path');
   var mkdirp = require('mkdirp');
 
   grunt.registerMultiTask('symlink', 'Create a symlink between paths', function() {
-    var helpers = require('grunt-lib-contrib').init(grunt);
 
-    var options = helpers.options(this, {
+    var options = this.options({
       overwrite: false,
       force: false,
       type: 'file'
@@ -33,9 +29,6 @@ module.exports = function(grunt) {
     var depth;
 
     grunt.verbose.writeflags(options, 'Options');
-
-    // TODO: ditch this when grunt v0.4 is released
-    this.files = helpers.normalizeMultiTaskFiles(this.data, this.target);
 
     target = path.normalize(this.data.target);
     link = path.normalize(this.data.link);
