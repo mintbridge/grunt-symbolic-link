@@ -1,4 +1,4 @@
-# grunt-symbolic-link [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-symbolic-link.png?branch=master)](http://travis-ci.org/gruntjs/grunt-symbolic-link)
+# grunt-symbolic-link [![Build Status](https://secure.travis-ci.org/mintbridge/grunt-symbolic-link.png?branch=master)](http://travis-ci.org/mintbridge/grunt-symbolic-link)
 
 Create symlinks between files/directories
 
