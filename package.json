@@ -1,7 +1,7 @@
 {
   "name": "grunt-symbolic-link",
   "description": "Create a symlink between paths",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/mintbridge/grunt-symbolic-link",
   "author": {
     "name": "Paul Dixon",
